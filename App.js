@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Task from './components/Task';
 
 
 export default function App() {
@@ -7,6 +8,8 @@ export default function App() {
       <View style={styles.taskManger}></View>
       <Text style={styles.mainTitle}>Daily Task</Text>
       <View style={styles.items}>
+        <Task text={'Task 1'} />
+        <Task text={'Task 2'} />
       </View>
     </View>
   );
